@@ -1,11 +1,12 @@
+theme: "starter-hugo-academic"
 # Configuration of Hugo
 # Guide: https://wowchemy.com/docs/getting-started/
 # Hugo Documentation: https://gohugo.io/getting-started/configuration/#all-configuration-settings
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
-title: Academic # Website name
-baseurl: 'https://example.com/' # Website URL
-copyright: '' # Footer text, e.g. '© {year} Me'
+title: Farica Zhuang # Website name
+baseurl: 'https://faricazjj.github.io/' # Website URL
+copyright: '© {2022} Farica Zhuang'
 
 ############################
 ## LANGUAGE
@@ -38,6 +39,7 @@ footnotereturnlinkcontents: <sup>^</sup>
 ignoreFiles: [\.ipynb$, .ipynb_checkpoints$, \.Rmd$, \.Rmarkdown$, _cache$]
 permalinks:
   event: '/talk/:slug/'
+  authors: '/author/:slug/'
   tags: '/tag/:slug/'
   categories: '/category/:slug/'
   publication_types: '/publication-type/:slug/'
