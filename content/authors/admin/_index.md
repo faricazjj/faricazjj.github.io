@@ -1,6 +1,5 @@
 ---
-bio: My research interests include distributed robotics, mobile computing and programmable
-  matter.
+bio: CS PhD student focusing on deep learning and genomics
 education:
   courses:
   - course: PhD in Computer Science
