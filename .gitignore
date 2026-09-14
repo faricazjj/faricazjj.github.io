@@ -1,6 +1,11 @@
 # IDEs
 .idea/
 
+# Local-only files
+uploads/*.pdf
+resume.pdf
+**/Farica_Zhuang_CV*.pdf
+
 # Hugo
 /resources/
 public/

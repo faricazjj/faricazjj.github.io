@@ -12,7 +12,40 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap"
         media="print" onload="this.media='all'">
   <meta name="author" content="Farica Zhuang"/>
-  <meta name="description" content="Computer science PhD student"/>
+  <meta name="description" content="Postdoctoral researcher in biomedical AI at the University of Pennsylvania"/>
+  <style>
+    .home-section { padding-top: 3.1rem; padding-bottom: 3.1rem; }
+    .about-lede p { margin-bottom: .85rem; }
+    .work-item { margin-bottom: 1.35rem; padding-bottom: 1.2rem; border-bottom: 1px solid rgba(21,101,192,.12); }
+    .dark .work-item { border-bottom-color: rgba(255,255,255,.12); }
+    .work-item:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: 0; }
+    .work-item h3 { font-size: 1.08rem; line-height: 1.35; margin: 0 0 .28rem; }
+    .work-item p { margin-bottom: 0; }
+    .work-meta { font-size: .9rem; margin-bottom: .4rem; opacity: .85; }
+    .pill { display: inline-block; font-size: .72rem; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; color: #1565c0; margin-right: .45rem; }
+    .dark .pill { color: #90caf9; }
+    .exp-grid { display: grid; grid-template-columns: 1fr; gap: 1.75rem; }
+    @media (min-width: 768px) { .exp-grid { grid-template-columns: 1fr 1fr; gap: 2rem; } }
+    .exp-col-title { font-size: .78rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; margin: 0 0 1rem; color: #1565c0; }
+    .dark .exp-col-title { color: #90caf9; }
+    .exp-item { margin-bottom: 1.05rem; }
+    .exp-item:last-child { margin-bottom: 0; }
+    .exp-top { display: flex; justify-content: space-between; gap: .75rem; align-items: baseline; }
+    .exp-role { font-weight: 600; margin: 0; }
+    .exp-when { font-size: .82rem; opacity: .7; white-space: nowrap; }
+    .exp-org { margin: 0; font-size: .92rem; opacity: .85; }
+    .exp-blurb { margin: .2rem 0 0; font-size: .92rem; }
+    .note-line { margin-top: 1.25rem; font-size: .92rem; }
+    .exp-extra { margin-top: 1.5rem; padding-top: 1.15rem; border-top: 1px solid rgba(21,101,192,.12); }
+    .dark .exp-extra { border-top-color: rgba(255,255,255,.12); }
+    .exp-extra .exp-col-title { margin-bottom: .55rem; }
+    .pub-list { list-style: none; padding: 0; margin: 0; }
+    .pub-list li { margin: 0 0 .9rem; font-size: .95rem; line-height: 1.45; }
+    .pub-list li:last-child { margin-bottom: 0; }
+    .award-list { list-style: none; padding: 0; margin: 0; }
+    .award-list li { display: flex; justify-content: space-between; gap: 1rem; margin: 0 0 .45rem; font-size: .95rem; }
+    .award-list span { opacity: .7; white-space: nowrap; }
+  </style>
   <link rel="alternate" hreflang="en-us" href="https://faricazjj.github.io/"/>
   <meta name="theme-color" content="#1565c0"/>
   <link rel="stylesheet" href="/css/vendor-bundle.min.f1ecf783c14edc00c9320c205831ad8e.css" media="print"
@@ -36,7 +69,7 @@
   <meta property="og:site_name" content="Farica Zhuang"/>
   <meta property="og:url" content="https://faricazjj.github.io/"/>
   <meta property="og:title" content="Farica Zhuang"/>
-  <meta property="og:description" content="Computer science PhD student"/>
+  <meta property="og:description" content="Postdoctoral researcher in biomedical AI at the University of Pennsylvania"/>
   <meta property="og:image"
         content="https://faricazjj.github.io/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_3.png"/>
   <meta property="twitter:image"
@@ -121,15 +154,19 @@
         <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
           <ul class="navbar-nav d-md-inline-flex">
             <li class="nav-item">
-              <a class="nav-link " href="/#about" data-target="#about"><span>About me</span></a>
+              <a class="nav-link " href="/#about" data-target="#about"><span>About</span></a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link " href="/#projects" data-target="#projects"><span>Projects</span></a>
+              <a class="nav-link " href="/#experience" data-target="#experience"><span>Experience</span></a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link " href="/#awards" data-target="#awards"><span>Misc</span></a>
+              <a class="nav-link " href="/#projects" data-target="#projects"><span>Selected work</span></a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="/#publications" data-target="#publications"><span>Publications</span></a>
             </li>
 
             <li class="nav-item">
@@ -140,13 +177,6 @@
         </div>
 
         <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
-
-          <li class="nav-item d-none d-lg-inline-flex">
-            <a class="nav-link" href="/" aria-label="">
-              <i class="fas fa-" aria-hidden="true"></i>
-            </a>
-          </li>
-
 
           <li class="nav-item">
             <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
@@ -208,7 +238,7 @@
 
               <h2>Farica Zhuang</h2>
 
-              <h3>Computer science PhD student</h3>
+              <h3>Postdoctoral Researcher</h3>
 
 
               <h3>
@@ -225,13 +255,6 @@
               <li>
                 <a href="/#contact" aria-label="envelope">
                   <i class="fas fa-envelope big-icon"></i>
-                </a>
-              </li>
-
-
-              <li>
-                <a href="/" aria-label="">
-                  <i class="fas fa- big-icon"></i>
                 </a>
               </li>
 
@@ -264,20 +287,11 @@
         <div class="col-12 col-lg-8">
 
 
-          <h1>About me</h1>
+          <h1>About</h1>
 
-          <div class="article-style">
-            <p>I am a computer science PhD student at University of Pennsylvania advised by <a
-              href="https://www.med.upenn.edu/shenlab/" target="_blank">Dr. Li Shen</a>. My research interest lies
-              in the intersection of machine learning, healthcare, and biology. My current work focuses on research to 
-              improve Alzheimer’s disease diagnosis and understanding through artificial intelligence and data-driven approaches.</p>
-            <p>Before coming to Penn, I received a B.S in applied mathematics from UCSD and an M.S in computer science
-              from Duke, where I was advised by <a href="https://gordanlab.cs.duke.edu/" target="_blank">Dr. Raluca
-                Gordan</a> working on transcription factor binding model.</p>
-            <!-- <p>
-               <i class="fas fa-download  pr-1 fa-fw"></i> Download my <a href="/uploads/resume.pdf" target="_blank">resumé</a>.
-            </p> -->
-
+          <div class="article-style about-lede">
+            <p>I am a postdoctoral researcher at the University of Pennsylvania. I completed my PhD in Computer Science in 2026, building foundation models and interpretable ML systems for genomics, RNA biology, and clinical data.</p>
+            <p>I am looking for research scientist, applied scientist, and ML engineering roles.</p>
           </div>
 
           <div class="row">
@@ -287,11 +301,13 @@
               <div class="section-subheading">Interests</div>
               <ul class="ul-interests mb-0">
 
-                <li>Machine learning</li>
+                <li>Foundation models and LLMs</li>
 
-                <li>Healthcare</li>
+                <li>Biomedical and clinical AI</li>
 
-                <li>Biology</li>
+                <li>RNA biology and genomics</li>
+
+                <li>Interpretable multimodal ML</li>
 
               </ul>
             </div>
@@ -304,7 +320,7 @@
                 <li>
                   <i class="fa-li fas fa-graduation-cap"></i>
                   <div class="description">
-                    <p class="course">PhD in Computer Science, 2021-Present</p>
+                    <p class="course">PhD in Computer Science, 2026</p>
                     <p class="institution">University of Pennsylvania</p>
                   </div>
                 </li>
@@ -338,6 +354,94 @@
   </section>
 
 
+  <section id="experience" class="home-section wg-experience  ">
+    <div class="home-section-bg ">
+
+    </div>
+    <div class="container">
+
+
+      <div class="row  ">
+
+
+        <div
+          class="section-heading col-12 col-lg-4 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
+          <h1 class="mb-0">Experience</h1>
+
+        </div>
+
+
+        <div class="col-12 col-lg-8">
+          <div class="exp-grid">
+            <div>
+              <div class="exp-col-title">Industry</div>
+              <div class="exp-item">
+                <div class="exp-top">
+                  <p class="exp-role">Student Researcher, DeepVariant</p>
+                  <span class="exp-when">2025</span>
+                </div>
+                <p class="exp-org">Google Health</p>
+                <p class="exp-blurb">Methylation-aware long-read variant calling and phasing, shipped in DeepVariant 1.9.</p>
+              </div>
+              <div class="exp-item">
+                <div class="exp-top">
+                  <p class="exp-role">Software Engineer</p>
+                  <span class="exp-when">2020 – 2021</span>
+                </div>
+                <p class="exp-org">Eureka Industry Cloud by SAP</p>
+                <p class="exp-blurb">Full-stack claims platform.</p>
+              </div>
+              <div class="exp-item">
+                <div class="exp-top">
+                  <p class="exp-role">Software Engineer Intern</p>
+                  <span class="exp-when">2018</span>
+                </div>
+                <p class="exp-org">Teradata</p>
+                <p class="exp-blurb">Docker / Kubernetes CI/CD for distributed Python and ML workflows.</p>
+              </div>
+            </div>
+            <div>
+              <div class="exp-col-title">Research</div>
+              <div class="exp-item">
+                <div class="exp-top">
+                  <p class="exp-role">Postdoctoral Researcher</p>
+                  <span class="exp-when">2026 –</span>
+                </div>
+                <p class="exp-org">University of Pennsylvania</p>
+                <p class="exp-blurb">Foundation models, LLM systems, and interpretable MoE methods for biomedical AI.</p>
+              </div>
+              <div class="exp-item">
+                <div class="exp-top">
+                  <p class="exp-role">PhD, Computer Science</p>
+                  <span class="exp-when">2021 – 2026</span>
+                </div>
+                <p class="exp-org">University of Pennsylvania</p>
+                <p class="exp-blurb">G4mer, multimodal Alzheimer’s models, and clinical survival methods.</p>
+              </div>
+              <div class="exp-item">
+                <div class="exp-top">
+                  <p class="exp-role">Research Assistant</p>
+                  <span class="exp-when">2019 – 2020</span>
+                </div>
+                <p class="exp-org">Duke University</p>
+                <p class="exp-blurb">TF binding, cardiac variant interpretation, and EHR risk models.</p>
+              </div>
+            </div>
+          </div>
+          <div class="exp-extra">
+            <div class="exp-col-title">Teaching</div>
+            <p class="exp-blurb">Deep Learning and Computational Biology at UPenn. Outstanding TA Award at Duke.</p>
+          </div>
+        </div>
+
+
+      </div>
+
+
+    </div>
+  </section>
+
+
   <section id="projects" class="home-section wg-blank  ">
     <div class="home-section-bg ">
 
@@ -350,56 +454,30 @@
 
         <div
           class="section-heading col-12 col-lg-4 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
-          <h1 class="mb-0">Research Projects</h1>
+          <h1 class="mb-0">Selected work</h1>
 
         </div>
 
 
         <div class="col-12 col-lg-8">
-          <p><strong>G4mer: Transcriptome-wide mapping of RNA G-quadruplexes with an RNA langauge model</strong></p>
-          <p>RNA G-quadruplex (rG4) formations are secondary structures that have been known to play an important role
-            in cells and affect gene regulation. rG4 formations, if unstable, have been found to be
-            linked to genetic diseases. Here, we introduce G4mer, an RNA language model that improves upon
-            the current state-of-the-art models in predicting rG4 formations. G4mer detected variants affecting rG4s in
-            breast cancer-associated genes. G4mer variant predictions were validated for their functional and structural
-            effects both in situ and in vivo. </p>
-          <p>Presented as a long talk and poster at ISMB 2022 and ASHG 2023</p>
-          <p><em>Status: Published November 2025 Nature Communications</em></p>
-          <p><strong>APAeval</strong></p>
-          <p>Alternative polyadenylation (APA) is an RNA-processing mechanism that generates distinct 3’ termini on
-            transcripts, allowing a single gene to encode multiple variants.Studies have reported a critical role for
-            APA-mediated gene regulation during development or disease. Given the importance of APA, identifying and
-            quantifying usage of identified polyadenylation sites (PAS) on a global scale is critical for understanding
-            the underlying mechanisms of APA-mediated gene regulation. Here, we evaluate computational methods for the
-            detection and quantification of poly(A) sites and estimating their differential usage across RNA-seq
-            samples</p>
-          <p>Presented as a long talk and poster at ISMB 2022</p>
-          <p><em>Status: Published October 2023 RNA Journal</em></p>
-          <p><strong>Modeling Transcription Factor Binding</strong></p>
-          <p>Cooperative DNA-binding by transcription factor (TF) proteins is critical for gene expression regulation in
-            eukaryotes. Currently, the rules that drive cooperative versus independent binding of TFs to neighboring
-            sites are not well understood. Here, we developed models of cooperative DNA-binding for TF proteins, using
-            human factors ETS1 and RUNX1 as our case study, based on a high-throughput assay designed specifically to
-            detect cooperativity.</p>
-          <p>Presented as a poster at Recomb 2019</p>
-          <p><em>Status: Published October 2023 NAR</em></p>
-          <p><strong>GENESIS: Gene-specific machine learning models for variants of uncertain significance</strong></p>
-          <p>Genetic mutations found in the heart have been linked to arrhythmic heart disease. Here, we developed
-            gene-specific machine learning models for variants of uncertain significance found in catecholaminergic
-            polymorphic ventricular tachycardia and long QT syndrome-associated genes. Results from the models were used
-            to help determine the suitable treatments of patients suffering from hereditary irregular heartbeat but had
-            unclear genetic testing results.</p>
-          <p><em>Status: Published April 2022 Circulation: Arrhythmia and Electrophysiology</em></p>
-          <p><strong>Predict mortality and allocate palliative care for older patients with hip fracture</strong></p>
-          <p>Each year 300,000+ older adults are treated for hip fracture in the United States. For the majority who
-            suffer a fractured hip, the likelihood of full functional recovery remains low, and other related poor
-            health outcomes include permanent nursing home placement and excess mortality. Here investigate the use
-            of machine learning models for mortality prediction in older adult hip fracture patients using Medicare
-            assessment and administrative claims data with the overall goal of allocating palliative care resources more
-            effectively.</p>
-          <p>Presented as a talk at South Carolina National Big Data Health Science Conference 2020</p>
-          <p><em>Status: Published Feb 2021 JAMDA</em></p>
-
+          <div class="work-item">
+            <div class="pill">Industry</div>
+            <h3>Methylation-aware variant calling in DeepVariant</h3>
+            <p class="work-meta">Google Health &middot; 2025 &middot; <a href="https://github.com/google/deepvariant" target="_blank" rel="noopener">DeepVariant 1.9</a></p>
+            <p>Long-read variant calling and phasing with epigenetic signals, plus T2T evaluation pipelines. Core methods shipped in the official DeepVariant release.</p>
+          </div>
+          <div class="work-item">
+            <div class="pill">Research</div>
+            <h3>G4mer, an RNA language model</h3>
+            <p class="work-meta"><em>Nature Communications</em>, 2025 &middot; first author &middot; <a href="https://www.nature.com/articles/s41467-025-65020-7" target="_blank" rel="noopener">paper</a> &middot; <a href="https://huggingface.co/Biociphers/g4mer" target="_blank" rel="noopener">model</a></p>
+            <p>Transcriptome-wide prediction of RNA G-quadruplexes and disease variants. Validated structurally and functionally; invited talks at ISMB, ASHG, and Google Genomics.</p>
+          </div>
+          <div class="work-item">
+            <div class="pill">Research</div>
+            <h3>Interpretable multimodal clinical AI</h3>
+            <p class="work-meta">IEEE ICHI 2026 &middot; ACM-BCB 2026 &middot; first / co-first author</p>
+            <p>Mixture-of-experts models for Alzheimer’s diagnosis and survival analysis across imaging, EHR, and genomics. <a href="https://arxiv.org/abs/2512.10966" target="_blank" rel="noopener">ICHI</a> &middot; <a href="https://arxiv.org/abs/2606.14608" target="_blank" rel="noopener">BCB</a> &middot; <a href="https://arxiv.org/abs/2607.08778" target="_blank" rel="noopener">iLENS preprint</a></p>
+          </div>
         </div>
 
 
@@ -410,7 +488,7 @@
   </section>
 
 
-  <section id="awards" class="home-section wg-awards  ">
+  <section id="publications" class="home-section wg-blank  ">
     <div class="home-section-bg ">
 
     </div>
@@ -422,56 +500,22 @@
 
         <div
           class="section-heading col-12 col-lg-4 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
-          <h1 class="mb-0">Awards</h1>
-
+          <h1 class="mb-0">Publications</h1>
         </div>
 
 
         <div class="col-12 col-lg-8">
-
-
-          <div class="card experience course">
-            <div class="card-body">
-              <div class="section-subheading card-title exp-title text-muted my-0">Outstanding Teaching Assistant
-                Award
-              </div>
-              <div class="card-subtitle my-0 article-metadata">Duke University<span class="middot-divider"></span>
-
-                Aug 2020
-
-              </div>
-
-
-            </div>
-          </div>
-
-          <div class="card experience course">
-            <div class="card-body">
-              <div class="section-subheading card-title exp-title text-muted my-0">HackXX Beginner Award Champion</div>
-              <div class="card-subtitle my-0 article-metadata">UC San Diego<span class="middot-divider"></span>
-
-                Apr 2017
-
-              </div>
-
-
-            </div>
-          </div>
-
-          <div class="card experience course">
-            <div class="card-body">
-              <div class="section-subheading card-title exp-title text-muted my-0">Outstanding Student Award</div>
-              <div class="card-subtitle my-0 article-metadata">Foothill College<span class="middot-divider"></span>
-
-                Apr 2015
-
-              </div>
-
-
-            </div>
-          </div>
-
-
+          <ol class="pub-list">
+            <li><strong>G4mer: an RNA language model for transcriptome-wide identification of G-quadruplexes and disease variants.</strong> <em>Nature Communications</em>, 2025. <a href="https://www.nature.com/articles/s41467-025-65020-7" target="_blank" rel="noopener">paper</a></li>
+            <li><strong>Interpretable Alzheimer’s diagnosis via multimodal fusion of regional brain experts.</strong> <em>IEEE ICHI</em>, 2026. <a href="https://arxiv.org/abs/2512.10966" target="_blank" rel="noopener">paper</a></li>
+            <li><strong>Expert-driven survival machines.</strong> <em>ACM-BCB</em>, 2026. <a href="https://arxiv.org/abs/2606.14608" target="_blank" rel="noopener">paper</a></li>
+            <li><strong>iLENS: interpretable LLM-guided mixture-of-experts for neuroimaging survival analysis.</strong> <em>EMNLP</em> 2026 (submitted). <a href="https://arxiv.org/abs/2607.08778" target="_blank" rel="noopener">preprint</a></li>
+            <li><strong>A dynamic agentic framework for clinical tasks via specialized expert orchestration.</strong> <em>AAAI</em> (in preparation).</li>
+            <li><strong>CRL-JEPA: causal representation learning of cell states via world models.</strong> <em>ICLR</em> (in preparation).</li>
+            <li><strong>Cooperative DNA-binding mechanisms of transcription factors.</strong> <em>Nucleic Acids Research</em>, 2023. <a href="https://doi.org/10.1093/nar/gkad872" target="_blank" rel="noopener">paper</a></li>
+            <li><strong>GENESIS: gene-specific models for cardiac variants of uncertain significance.</strong> <em>Circulation: Arrhythmia and Electrophysiology</em>, 2022. <a href="https://doi.org/10.1161/CIRCEP.121.010326" target="_blank" rel="noopener">paper</a></li>
+            <li><strong>Mortality prediction and palliative care allocation after hip fracture.</strong> <em>JAMDA</em>, 2021. <a href="https://doi.org/10.1016/j.jamda.2020.09.025" target="_blank" rel="noopener">paper</a></li>
+          </ol>
         </div>
 
 
@@ -494,37 +538,16 @@
 
         <div
           class="section-heading col-12 col-lg-4 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
-          <h1 class="mb-0">Contact me</h1>
-          <p class="mt-1">Leave me a message if you&rsquo;d like to get in touch!</p>
+          <h1 class="mb-0">Contact</h1>
+          <p class="mt-1">I am on the job market and would be glad to talk about research, applied ML, and open roles.</p>
         </div>
 
 
         <div class="col-12 col-lg-8">
 
 
-          <div class="mb-3">
-            <form name="contact" method="POST" action="https://formspree.io/f/test" data-netlify-recaptcha="true">
-              <div class="form-group form-inline">
-                <label class="sr-only" for="inputName">Name</label>
-                <input type="text" name="name" class="form-control w-100" id="inputName" placeholder="Name" required>
-              </div>
-              <div class="form-group form-inline">
-                <label class="sr-only" for="inputEmail">Email</label>
-                <input type="email" name="email" class="form-control w-100" id="inputEmail" placeholder="Email"
-                       required>
-              </div>
-              <div class="form-group">
-                <label class="sr-only" for="inputMessage">Message</label>
-                <textarea name="message" class="form-control" id="inputMessage" rows="5" placeholder="Message"
-                          required></textarea>
-              </div>
-
-              <div class="d-none">
-                <label>Do not fill this field unless you are a bot: <input name="_gotcha"></label>
-              </div>
-
-              <button type="submit" class="btn btn-primary px-3 py-2 w-100">Send</button>
-            </form>
+          <div class="article-style mb-3">
+            <p>The fastest way to reach me is email or <a href="https://www.linkedin.com/in/faricazhuang" target="_blank" rel="noopener">LinkedIn</a>.</p>
           </div>
 
 
@@ -533,7 +556,7 @@
 
             <li>
               <i class="fa-li fas fa-envelope fa-2x" aria-hidden="true"></i>
-              <span id="person-email"><a href="mailto:farica@upenn.edu">farica@upenn.edu</a></span>
+              <span id="person-email"><a href="mailto:farica.zhuang@pennmedicine.upenn.edu">farica.zhuang@pennmedicine.upenn.edu</a></span>
             </li>
 
 
@@ -566,18 +589,7 @@
 
 
       <p class="powered-by">
-        © {2022} Farica Zhuang
-      </p>
-
-
-      <p class="powered-by">
-
-
-        Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank"
-                          rel="noopener">Wowchemy</a> — the free, <a
-        href="https://github.com/wowchemy/wowchemy-hugo-themes" target="_blank" rel="noopener">open source</a> website
-        builder that empowers creators.
-
+        © 2026 Farica Zhuang
       </p>
     </footer>
 
